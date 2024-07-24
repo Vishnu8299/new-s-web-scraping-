@@ -88,7 +88,7 @@ def scrape_articles():
 @app.route('/')
 def index():
     articles = scrape_articles()
-    return render_template('main3x.html', articles=articles)
+    return render_template('news.html', articles=articles)
 
 @app.route('/download')
 def download():
